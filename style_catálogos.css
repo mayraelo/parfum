@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(99, 100, 95);
+    margin: 0;
+    padding: 0px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(247, 121, 173);
+}
+
+.icon {
+    width: 3%;
+    height: 5%;
+}
+.navbar .nav {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 1%;
+    text-decoration: none;
+    width: 15%;
+}
+
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.catalog {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+}
+
+#men h2 {
+    color: blue;
+}
+
+#women h2 {
+    color: pink;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 70%;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navbar .nav {
+        width: 20%;
+    }
+
+    .icon {
+        width: 4%;
+        height: 6%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .navbar .nav {
+        width: 30%;
+        padding: 15px 1%;
+    }
+
+    .icon {
+        width: 5%;
+        height: 8%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .nav {
+        width: 50%;
+        padding: 10px 1%;
+    }
+
+    .icon {
+        width: 6%;
+        height: 10%;
+    }
+
+    th, td {
+        font-size: 60%;
+        padding: 6px;
+    }
+}

@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height:0;
+    font-family: Arial,sans-serif;
+    background: rgb(99,100,95);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+    /* Estilos para a barra de navegação */
+    .navbar {
+    overflow: hidden;
+    background-color: rgb(247, 121, 173);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para os links na barra de navegação */
+.navbar .nav {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 1%;
+    text-decoration: none;
+    min-width: 60px;;
+}
+
+.icon {
+    width: 3%;
+    height: 5%;
+}
+
+span {
+    padding: 15px 1%;
+}
+
+/* Altera a cor do link quando o mouse está sobre ele */
+.navbar a:hover {
+    background-color: rgb(252, 175, 207);
+    color: white;
+}
+
+/* Centraliza os itens da barra de navegação */
+.navbar a {
+    width: 21%; /* Distribui igualmente em 4 itens */
+}
+
+
+.content1 {
+    background-image: url('imagens/IMG-20240521-WA0071.jpg');
+    background-size: cover;
+    height: calc(100% - 60px);
+    margin-top: 60px;}
+    
+    @media (max-width: 1024px) {
+        .navbar .nav {
+            width: 48%; /* Ajuste a largura dos links para caber em duas colunas */
+        }
+        .navbar span {
+            width: 48%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .navbar .nav, .navbar span {
+            width: 100%; /* Links em uma única coluna em telas menores */
+            text-align: left;
+            padding-left: 20px;
+        }
+        .navbar {
+            flex-direction: column; /* Torne a barra de navegação vertical */
+            align-items: flex-start;
+        }
+        .icon {
+            width: 6%;
+            height: 10%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .navbar .nav, .navbar span {
+            padding: 10px 1%;
+        }
+        .navbar .nav {
+            font-size: 14px; /* Reduza o tamanho da fonte para telas menores */
+        }
+        .icon {
+            width: 8%;
+            height: 12%;
+        }
+    }

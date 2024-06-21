@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(97, 93, 93);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:150vh; }
+
+h1 {
+    text-align: center;
+    color: #f80a5a;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+
+ /* Estilos para a barra de navegação */
+ .navbar {
+    width: 100% ;
+    overflow: hidden;
+    background-color: rgb(247, 121, 173);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+/* Estilos para os links na barra de navegação */
+.navbar .nav {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 1%;
+    text-decoration: none;
+    width: 15%;
+}
+.icon {
+    width: 3%;
+    height: 5%;
+}
+
+.overlay {
+    position:center ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(212, 64, 121, 0.5);
+    z-index: 0;
+}
+
+.content {
+    text-align: left;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+    width: 100%;
+}
+
+.topo1 {
+    text-align: justify;
+}
+
+.text {
+    width: 70%;
+    color: white;
+    font-size: 25px;
+    writing-mode: vertical-rl;
+    text-orientation:mixed;
+    transform: center;
+    text-align:justify;
+}
+
+.media img, .media video {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1024px) {
+    .navbar .nav {
+        width: 48%; /* Ajuste a largura dos links para caber em duas colunas */
+    }
+    .navbar span {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav, .navbar span {
+        width: 100%; /* Links em uma única coluna em telas menores */
+        text-align: left;
+        padding-left: 20px;
+    }
+    .navbar {
+        flex-direction: column; /* Torne a barra de navegação vertical */
+        align-items: flex-start;
+    }
+    .icon {
+        width: 6%;
+        height: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .nav, .navbar span {
+        padding: 10px 1%;
+    }
+    .navbar .nav {
+        font-size: 14px; /* Reduza o tamanho da fonte para telas menores */
+    }
+    .icon {
+        width: 8%;
+        height: 12%;
+    }}
+
+@media screen and (width: 480px) {
+    .navbar .nav {
+        
+    
+width: 1000%; /* Links ocupam a largura total em telas pequenas */
+        
+      
+padding: 10px 0; /* Reduz o padding para ocupar menos espaço */
+        
+   
+font-size: 9px; /* Diminui o tamanho da fonte para melhor visualização */
+}}
+
+
